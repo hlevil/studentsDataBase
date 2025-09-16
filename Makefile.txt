@@ -1,4 +1,22 @@
-all:
-	g++ -std=c++20 main.cpp -o a.out
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++11 -pthread
+GTEST_FLAGS = -lgtest -lgtest_main
+
+# Основная программа
+main: main.cpp
+	$(CXX) $(CXXFLAGS) -o student_db main.cpp
+
+# Тесты
+test: test.cpp
+	$(CXX) $(CXXFLAGS) -o test_program test.cpp $(GTEST_FLAGS)
+
+# Запуск тестов
+run-tests: test
+	./test_program
+
+# Очистка
 clean:
-	rm a.out
+	rm -f student_db test_program
+
+# Все цели
+all: main test
