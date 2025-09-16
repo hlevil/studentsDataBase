@@ -113,8 +113,3 @@ TEST_F(StudentDatabaseTest, DataIntegrityAfterEdit) {
     EXPECT_DOUBLE_EQ(student.gpa, 4.5);
 }
 
-// Главная функция для запуска тестов
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
