@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <vector>
 #include <string>
-#include "main.cpp" // Подключаем основной файл
+#include "main.cpp" // Подключаем наш основной файл
 
 // Тестовый класс для студенческой базы данных
 class StudentDatabaseTest : public ::testing::Test {
@@ -112,4 +112,5 @@ TEST_F(StudentDatabaseTest, DataIntegrityAfterEdit) {
     EXPECT_EQ(student.major, "CS");
     EXPECT_DOUBLE_EQ(student.gpa, 4.5);
 }
+
 
