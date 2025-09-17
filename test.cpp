@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <vector>
 #include <string>
-#include "student_database.h" // Подключаем 
+#include "main.cpp" // Подключаем основной файл
 
 // Тестовый класс для студенческой базы данных
 class StudentDatabaseTest : public ::testing::Test {
