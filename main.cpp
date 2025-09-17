@@ -3,6 +3,7 @@
 #include <string>
 #include <limits> // для очистки буфера ввода
 #include <sstream>
+#include "student_database.h"
 
 struct Student {
     std::string name;
